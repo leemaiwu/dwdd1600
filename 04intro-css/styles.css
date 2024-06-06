@@ -1,0 +1,130 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Header Styles Here */
+
+header {
+  background-color: #faf7f4;
+  padding: 1rem 2vw;
+}
+
+header h1 {
+  margin: 0;
+  color: #176f8d;
+}
+
+header p {
+  margin: 0;
+  color: #176f8d;
+  font-weight: 400;
+  letter-spacing: .55px;
+}
+
+/* Nav Styles Here */
+
+nav {
+  background-color: #87715c;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0 2vw;
+  margin: 0;
+  display: flex;
+}
+
+nav a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  display: block;
+  padding: .83rem 2rem;
+}
+
+nav li.current a {
+  color: #59c0e4;
+}
+
+nav a:hover {
+  background-color: #3e3328;
+}
+
+/* Main Styles Here */
+
+main {
+  padding: 1rem 2vw;
+}
+
+main h1 {
+  color: #3e3328;
+}
+
+main h2 {
+  color: #176f8d;
+  margin-bottom: .2rem;
+}
+
+main p {
+  color: #2F3133;
+  margin: 0 0 .3rem 0;
+}
+
+main ol {
+  padding: .5rem 3vw;
+  background-color: #faf7f4;
+}
+
+main dl dt {
+  color: #3e3328;
+  font-weight: 700;
+}
+
+main dl dd {
+  color: #176f8d;
+  font-size: .9rem;
+}
+
+main ul {
+  list-style-type: circle;
+}
+
+main ul li {
+  line-height: 125%;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+
+main address {
+  font-style: normal;
+  background-color: #faf7f4;
+  padding: .5rem;
+  width: 12.5rem;
+  border: 1px solid #87715c;
+  border-radius: .5rem;
+}
+
+main a {
+  color: #176f8d;
+}
+
+main a:hover {
+  color: #87715c;
+}
+
+/* Footer Styles Here */
+footer {
+  background: #faf7f4;
+  text-align: center;
+  color: #176f8d;
+  padding: 1rem 0;
+  font-size: .8rem;
+}
+
+footer a {
+  color: #176f8d;
+}
