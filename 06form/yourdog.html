@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>All About Dogs</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" type="text/css">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn about dog breeds and their traits"
+    />
+    <meta name="author" content="Laura Wu" />
+  </head>
+<body>
+    <!-- start the page header -->
+    <header>
+      <h1>All About Dogs</h1>
+      <p>Human's Best Friend Forever</p>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Dogs 101</a></li>
+        <li class="active"><a href="yourdog.html">Your Dog</a></li>
+      </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Tell Us About Your Dog</h1>
+        <form method="get" class="dogForm" action="thanks.html">
+            <fieldset>
+                <legend>Basic Information</legend>
+                <Label>
+                    First Name*<input type="text" name="fname" required>
+                </Label>
+                <Label>
+                    Last Name*<input type="text" name="lname" required>
+                </Label>
+                <Label>
+                    Cell Number*<input type="tel" name="phone" required placeholder="800-902-0550">
+                </Label>
+                <Label>
+                    Dog's Name*<input type="text" name="name" required>
+              </Label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dog Age & Size</legend>
+                <Label>
+                    <input type="radio" name="age" value="puppy">Puppy (under 2 years)
+                </Label>
+                <Label>
+                    <input type="radio" name="age" value="adult">Adult (2 - 6 years)
+                </Label>
+                <Label>
+                    <input type="radio" name="age" value="senior">Senior (7+ years)
+                </Label>
+    
+                <label>Dog Size
+                  <select name="size">
+                      <option value="xs">Extra Small (Under 10 lbs)</option>
+                      <option value="s">Small (10 - 25 lbs)</option>
+                      <option value="m">Medium (25 - 50 lbs)</option>
+                      <option value="l">Large (50 - 75 lbs)</option>
+                      <option value="xl">Extra Large (75+ lbs)</option>
+                  </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Top Favorites</legend>
+                <Label>
+                    <input type="checkbox" name="treat" value="chosen">Treats (soft chews)
+                </Label>
+                <Label>
+                    <input type="checkbox" name="bully" value="chosen">Bully Stick (hard chew)
+                </Label>
+                <Label>
+                    <input type="checkbox" name="ball" value="chosen">Toy Ball
+                </Label>
+                <Label>
+                    <input type="checkbox" name="stuffy" value="chosen">Plush Toy
+                </Label>
+
+            </fieldset>
+            
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" value="Submit Dog Info">
+        </form>
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+      <p>
+        &copy; 2024 &bull; Laura Wu &bull;
+        <a href="mailto:leemaiwu@gmail.com">Email Us</a>
+      </p>
+    </footer>
+</body>
+</html>
