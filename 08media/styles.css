@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Header Styles Here */
+
+header {
+  padding: 1rem 2vw;
+  display: flex;
+  align-items: center;
+}
+
+header div {
+  padding-left: 1.5vw;
+}
+
+header h1 {
+  margin: 0;
+  color: #176f8d;
+}
+
+header p {
+  margin: 0;
+  color: #176f8d;
+  font-weight: 400;
+  letter-spacing: .55px;
+}
+
+/* Nav Styles Here */
+
+/* SMALL screen */
+
+@media only screen and (max-width: 800px) {
+  header div {
+    padding-left: 2.5vw;
+  }
+
+  nav ul {
+      margin: 0;
+      padding: 0 2vw;
+      list-style-type: none;
+      /* background-color: #87715c; */
+  }
+  nav a {
+      display: block;
+      padding: 0.8rem;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      border-bottom: solid 1px #aaa;
+      color: #3e3328;
+  }
+  nav li.current a {
+      color: #59c0e4;
+  }
+  nav a:hover {
+    background-image: linear-gradient(to bottom, #4d3e31, #1f1914);
+    color: white;
+  }
+}
+
+/* BIG screen */
+
+@media only screen and (min-width: 801px) {
+  nav {
+    border-top: solid #87715c 1px;
+    /* background-color: #87715c; */
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #3e3328;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    padding: .83rem 2rem;
+  }
+
+  nav li.current a {
+    border-bottom: solid 2px #3e3328;
+  }
+
+  nav a:hover {
+    color: #176f8d;
+  }
+}
+
+/* Main Styles Here */
+
+main {
+  padding: 1rem 2vw;
+}
+
+main h1 {
+  color: #3e3328;
+}
+
+main h2 {
+  color: #176f8d;
+  margin-bottom: .2rem;
+}
+
+main p {
+  color: #2F3133;
+  margin: 0 0 .3rem 0;
+}
+
+main ol {
+  padding: .5rem 3vw;
+  background-color: #faf7f4;
+}
+
+main dl dt {
+  color: #3e3328;
+  font-weight: 700;
+}
+
+main dl dd {
+  color: #176f8d;
+  font-size: .9rem;
+}
+
+main ul {
+  list-style-type: circle;
+}
+
+main ul li {
+  line-height: 125%;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+
+main address {
+  font-style: normal;
+  /* background-color: #faf7f4; */
+  padding: .5rem;
+  width: 12.5rem;
+  font-style: italic;
+  /* border: 1px solid #87715c; */
+  /* border-radius: .5rem; */
+}
+
+main a {
+  color: #176f8d;
+}
+
+main a:hover {
+  color: #87715c;
+}
+
+.dogshero {
+  width: 100%;
+  margin: 0;
+}
+
+.dogshero img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapped figcaption {
+  text-align: center;
+  font-size: .75rem;
+}
+
+table.breed-info {
+  width: 100%;
+  border-collaspe: collaspe;
+}
+
+table.breed-info th {
+  background-color: #176f8d;
+  color: white;
+  padding: .5rem 2vw;
+  text-align: left;
+}
+
+table.breed-info td {
+  color: #3e3328;
+  padding: .4rem 2vw;
+}
+
+table.breed-info tr:nth-child(odd) {
+  background-color: #F7F7F7;
+  padding: .4rem 2vw;
+}
+
+table.breed-info tr:hover {
+  background-color: rgba(23, 111, 141, 0.2);
+}
+
+/* Footer Styles Here */
+footer {
+  border-top: solid #87715c 1px;
+  text-align: center;
+  color: #176f8d;
+  padding: 1rem 0;
+  font-size: .8rem;
+}
+
+footer a {
+  color: #176f8d;
+}
+
+header, nav, main, footer {
+  max-width: 64rem;
+  margin: 0 auto;
+}
